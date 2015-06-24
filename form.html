@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="form.js" async defer></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Sundsvall</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav ">
+            <li><a href="index.html">Startsidan</a></li>
+            <li class="active"><a href="form.html">Formulär</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Mitt Quiz!</h1>
+        <h4>Mitt miljöquiz för Sundsvalls Kommun är baserat på <a href="http://www.sundsvall.se/Global/oppnadata/infografik/infografik.jpg">projektet e-korren</a></h4>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+
+
+          <div id="q1">
+            <legend>Hur många kilo sopor slängde varje invånare(<small>96 978 personer</small>) i Sundsvalls kommun under 2013?</legend>
+            <div class="radio">
+              <label>
+                <input type="radio" name="s1" id="s1_1" value="150">
+                150kg
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="s1" id="s1_2" value="165">
+                165kg
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="s1" id="s1_3" value="184">
+                184kg
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="s1" id="s1_4" value="204">
+                204kg
+              </label>
+            </div>
+          </div>
+
+
+
+          <div id="q2" class="hidden">
+            <legend>Hur stor andel av Sundsvalls invånares hushållsavfall var kompost under 2013?</legend>
+            <div class="radio">
+              <label>
+                <input type="radio" name="s2" id="s2_1" value="9">
+                9%
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="s2" id="s2_2" value="13">
+                13%
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="s2" id="s2_3" value="17">
+                17%
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="s2" id="s2_4" value="21">
+                21%
+              </label>
+            </div>
+          </div>
+
+          <div id="q3" class="hidden">
+            <legend>Hur bra var den här genomgången?</legend>
+            <div class="radio">
+              <label>
+                <input type="radio" name="s3" id="s3_1" value="bra">
+                bra
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="s3" id="s3_2" value="sådär">
+                sådär
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="s3" id="s3_3" value="grym">
+                grym
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="s3" id="s3_4" value="anus">
+                anus
+              </label>
+            </div>
+          </div>
+
+
+
+          <button type="button" class="btn btn-default" id="next_question">Nästa fråga</button>
+          <h1 id="result_container" class="hidden text-center">
+            Du hade:<br>
+            <span id="result">0</span> rätta svar.
+          </h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
